@@ -6,8 +6,6 @@ import 'screens/signup_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/inventory_screen.dart';
-import 'screens/medicine_alerts_screen.dart';
-
 import 'package:pharmcare/services/notification_service.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
