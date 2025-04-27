@@ -82,7 +82,7 @@ class _InventoryScreenState extends State<InventoryScreen> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: ["All", "Tablets", "Syrups", "Injections"]
+                children: ["All", "Tablet", "Syrup", "Injection"]
                     .map((category) => Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 5),
                           child: ChoiceChip(
