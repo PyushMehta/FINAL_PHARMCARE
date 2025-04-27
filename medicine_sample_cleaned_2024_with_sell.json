@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 147739,
+    "name": "Mycodryl Syrup",
+    "price": 42,
+    "category": "Syrup",
+    "stock": 473,
+    "threshold": 15,
+    "expiry": "2024-07-21",
+    "sell": 46.2
+  },
+  {
+    "id": 234400,
+    "name": "Vildapin 50mg Tablet",
+    "price": 120,
+    "category": "Tablet",
+    "stock": 24,
+    "threshold": 16,
+    "expiry": "2025-07-04",
+    "sell": 132
+  },
+  {
+    "id": 177884,
+    "name": "Propol 20mg Tablet",
+    "price": 27,
+    "category": "Tablet",
+    "stock": 439,
+    "threshold": 13,
+    "expiry": "2026-10-28",
+    "sell": 29.7
+  },
+  {
+    "id": 32579,
+    "name": "B Cef DS Syrup",
+    "price": 52,
+    "category": "Syrup",
+    "stock": 365,
+    "threshold": 12,
+    "expiry": "2025-08-29",
+    "sell": 57.2
+  },
+  {
+    "id": 49479,
+    "name": "Chophos 200mg Injection",
+    "price": 45,
+    "category": "Injection",
+    "stock": 358,
+    "threshold": 5,
+    "expiry": "2025-08-02",
+    "sell": 49.5
+  },
+  {
+    "id": 50506,
+    "name": "C-Tech 1000mg Injection",
+    "price": 78,
+    "category": "Injection",
+    "stock": 482,
+    "threshold": 15,
+    "expiry": "2027-11-04",
+    "sell": 85.8
+  },
+  {
+    "id": 160308,
+    "name": "Nimuwin Plus Suspension",
+    "price": 7.7,
+    "category": "Syrup",
+    "stock": 491,
+    "threshold": 6,
+    "expiry": "2027-01-13",
+    "sell": 8.47
+  },
+  {
+    "id": 9559,
+    "name": "Arclav DS Dry Syrup",
+    "price": 125,
+    "category": "Syrup",
+    "stock": 288,
+    "threshold": 6,
+    "expiry": "2025-12-08",
+    "sell": 137.5
+  },
+  {
+    "id": 184745,
+    "name": "Rosuless-F Tablet",
+    "price": 173.9,
+    "category": "Tablet",
+    "stock": 441,
+    "threshold": 12,
+    "expiry": "2025-02-20",
+    "sell": 191.29
+  },
+  {
+    "id": 239328,
+    "name": "Varmox-CV 228.5 Tablet DT",
+    "price": 63,
+    "category": "Tablet",
+    "stock": 31,
+    "threshold": 17,
+    "expiry": "2027-02-01",
+    "sell": 69.3
+  },
+  {
+    "id": 50093,
+    "name": "Claxin CV 500 mg/125 mg Tablet",
+    "price": 153,
+    "category": "Tablet",
+    "stock": 340,
+    "threshold": 5,
+    "expiry": "2026-06-12",
+    "sell": 168.3
+  },
+  {
+    "id": 27076,
+    "name": "Brucet 400 mg/333 mg Tablet",
+    "price": 8.75,
+    "category": "Tablet",
+    "stock": 96,
+    "threshold": 7,
+    "expiry": "2024-01-17",
+    "sell": 9.63
+  },
+  {
+    "id": 45675,
+    "name": "Cnl Plus 0.25 mg/20 mg Tablet",
+    "price": 42.5,
+    "category": "Tablet",
+    "stock": 269,
+    "threshold": 20,
+    "expiry": "2027-06-01",
+    "sell": 46.75
+  },
+  {
+    "id": 247357,
+    "name": "Zedonac 50 mg/500 mg Tablet",
+    "price": 22,
+    "category": "Tablet",
+    "stock": 449,
+    "threshold": 15,
+    "expiry": "2024-11-30",
+    "sell": 24.2
+  },
+  {
+    "id": 202698,
+    "name": "Sit DC-M 1000 Tablet",
+    "price": 127,
+    "category": "Tablet",
+    "stock": 129,
+    "threshold": 7,
+    "expiry": "2024-04-19",
+    "sell": 139.7
+  },
+  {
+    "id": 37759,
+    "name": "Closum 10mg Tablet MD",
+    "price": 67.69,
+    "category": "Tablet",
+    "stock": 345,
+    "threshold": 9,
+    "expiry": "2024-12-14",
+    "sell": 74.46
+  },
+  {
+    "id": 78115,
+    "name": "Etudolo MR 400mg/4mg Tablet",
+    "price": 206,
+    "category": "Tablet",
+    "stock": 248,
+    "threshold": 9,
+    "expiry": "2027-01-05",
+    "sell": 226.6
+  },
+  {
+    "id": 90706,
+    "name": "Forecold Tablet",
+    "price": 10.81,
+    "category": "Tablet",
+    "stock": 389,
+    "threshold": 12,
+    "expiry": "2025-04-18",
+    "sell": 11.89
+  },
+  {
+    "id": 198276,
+    "name": "Realb Syrup",
+    "price": 22,
+    "category": "Syrup",
+    "stock": 232,
+    "threshold": 16,
+    "expiry": "2025-07-17",
+    "sell": 24.2
+  },
+  {
+    "id": 183422,
+    "name": "Q Mox CV Dry Syrup",
+    "price": 52.9,
+    "category": "Syrup",
+    "stock": 205,
+    "threshold": 15,
+    "expiry": "2024-04-18",
+    "sell": 58.19
+  },
+  {
+    "id": 118535,
+    "name": "Ketonac 2% Cream",
+    "price": 62,
+    "category": "Other",
+    "stock": 412,
+    "threshold": 16,
+    "expiry": "2026-05-13",
+    "sell": 68.2
+  },
+  {
+    "id": 148813,
+    "name": "Merohospi 500mg Injection",
+    "price": 1562.5,
+    "category": "Injection",
+    "stock": 142,
+    "threshold": 5,
+    "expiry": "2025-10-13",
+    "sell": 1718.75
+  },
+  {
+    "id": 1184,
+    "name": "Acera 20 Capsule",
+    "price": 90.65,
+    "category": "Other",
+    "stock": 162,
+    "threshold": 19,
+    "expiry": "2025-04-29",
+    "sell": 99.72
+  },
+  {
+    "id": 244963,
+    "name": "Xappy-DR 80mg/250mg Tablet",
+    "price": 49.9,
+    "category": "Tablet",
+    "stock": 401,
+    "threshold": 12,
+    "expiry": "2026-07-17",
+    "sell": 54.89
+  },
+  {
+    "id": 250168,
+    "name": "Zonflox-OZ Tablet",
+    "price": 117,
+    "category": "Tablet",
+    "stock": 286,
+    "threshold": 19,
+    "expiry": "2024-09-24",
+    "sell": 128.7
+  },
+  {
+    "id": 220647,
+    "name": "Trihexol 5mg Tablet",
+    "price": 10,
+    "category": "Tablet",
+    "stock": 12,
+    "threshold": 20,
+    "expiry": "2025-06-16",
+    "sell": 11
+  },
+  {
+    "id": 67322,
+    "name": "Decsir-P 50mg/500mg/10mg Tablet",
+    "price": 58,
+    "category": "Tablet",
+    "stock": 150,
+    "threshold": 19,
+    "expiry": "2026-08-28",
+    "sell": 63.8
+  },
+  {
+    "id": 151576,
+    "name": "Nisu 100mg Tablet",
+    "price": 19,
+    "category": "Tablet",
+    "stock": 448,
+    "threshold": 9,
+    "expiry": "2024-11-15",
+    "sell": 20.9
+  },
+  {
+    "id": 2706,
+    "name": "Arofen Plus Gel",
+    "price": 78.68,
+    "category": "Other",
+    "stock": 90,
+    "threshold": 20,
+    "expiry": "2025-06-04",
+    "sell": 86.55
+  },
+  {
+    "id": 50056,
+    "name": "Citiwat Plus 500mg/800mg Tablet",
+    "price": 592,
+    "category": "Tablet",
+    "stock": 54,
+    "threshold": 14,
+    "expiry": "2025-10-09",
+    "sell": 651.2
+  },
+  {
+    "id": 28507,
+    "name": "Bixro 16mg Tablet",
+    "price": 75.5,
+    "category": "Tablet",
+    "stock": 139,
+    "threshold": 16,
+    "expiry": "2027-09-10",
+    "sell": 83.05
+  },
+  {
+    "id": 226777,
+    "name": "Tazo C 250mg/31.25mg Injection",
+    "price": 48,
+    "category": "Injection",
+    "stock": 53,
+    "threshold": 10,
+    "expiry": "2025-07-25",
+    "sell": 52.8
+  },
+  {
+    "id": 84568,
+    "name": "Folviz-Plus Tablet",
+    "price": 240,
+    "category": "Tablet",
+    "stock": 431,
+    "threshold": 7,
+    "expiry": "2024-01-06",
+    "sell": 264
+  },
+  {
+    "id": 63803,
+    "name": "Doxycred-LB 100 Capsule",
+    "price": 72,
+    "category": "Other",
+    "stock": 198,
+    "threshold": 10,
+    "expiry": "2026-03-12",
+    "sell": 79.2
+  },
+  {
+    "id": 25005,
+    "name": "Amidox 500mg Injection",
+    "price": 55.6,
+    "category": "Injection",
+    "stock": 173,
+    "threshold": 7,
+    "expiry": "2026-09-18",
+    "sell": 61.16
+  },
+  {
+    "id": 102774,
+    "name": "Goncid Suspension Mango Sugar Free",
+    "price": 80,
+    "category": "Syrup",
+    "stock": 233,
+    "threshold": 6,
+    "expiry": "2027-07-21",
+    "sell": 88
+  },
+  {
+    "id": 77842,
+    "name": "Ebaset 20mg Tablet",
+    "price": 52.38,
+    "category": "Tablet",
+    "stock": 408,
+    "threshold": 13,
+    "expiry": "2027-11-11",
+    "sell": 57.62
+  },
+  {
+    "id": 41039,
+    "name": "Cefabest SB Injection",
+    "price": 135,
+    "category": "Injection",
+    "stock": 164,
+    "threshold": 15,
+    "expiry": "2026-04-28",
+    "sell": 148.5
+  },
+  {
+    "id": 224513,
+    "name": "Txr 250 Tablet",
+    "price": 180,
+    "category": "Tablet",
+    "stock": 26,
+    "threshold": 18,
+    "expiry": "2025-12-04",
+    "sell": 198
+  },
+  {
+    "id": 148568,
+    "name": "Metclav 1.2gm Injection",
+    "price": 137,
+    "category": "Injection",
+    "stock": 246,
+    "threshold": 6,
+    "expiry": "2026-03-21",
+    "sell": 150.7
+  },
+  {
+    "id": 25963,
+    "name": "Baga-NT Tablet",
+    "price": 426.8,
+    "category": "Tablet",
+    "stock": 310,
+    "threshold": 7,
+    "expiry": "2026-05-08",
+    "sell": 469.48
+  },
+  {
+    "id": 17657,
+    "name": "Azitime 200mg Dry Syrup",
+    "price": 85,
+    "category": "Syrup",
+    "stock": 86,
+    "threshold": 19,
+    "expiry": "2024-08-27",
+    "sell": 93.5
+  },
+  {
+    "id": 73593,
+    "name": "Etirest 0.25mg Tablet",
+    "price": 71.9,
+    "category": "Tablet",
+    "stock": 418,
+    "threshold": 10,
+    "expiry": "2027-07-30",
+    "sell": 79.09
+  },
+  {
+    "id": 1697,
+    "name": "ALPRAQUIL 0.5 MG TABLET",
+    "price": 22,
+    "category": "Tablet",
+    "stock": 156,
+    "threshold": 11,
+    "expiry": "2024-01-06",
+    "sell": 24.2
+  },
+  {
+    "id": 152893,
+    "name": "Neocold AF Syrup",
+    "price": 65,
+    "category": "Syrup",
+    "stock": 304,
+    "threshold": 16,
+    "expiry": "2026-09-20",
+    "sell": 71.5
+  },
+  {
+    "id": 192846,
+    "name": "Ritham 10mg Tablet",
+    "price": 70,
+    "category": "Tablet",
+    "stock": 211,
+    "threshold": 7,
+    "expiry": "2025-01-27",
+    "sell": 77
+  },
+  {
+    "id": 121153,
+    "name": "Lidozone  Ear Drop",
+    "price": 129,
+    "category": "Syrup",
+    "stock": 128,
+    "threshold": 10,
+    "expiry": "2027-08-23",
+    "sell": 141.9
+  },
+  {
+    "id": 113798,
+    "name": "Ifytrox-TB 250mg/31.25mg Injection",
+    "price": 45,
+    "category": "Injection",
+    "stock": 263,
+    "threshold": 20,
+    "expiry": "2024-04-16",
+    "sell": 49.5
+  },
+  {
+    "id": 161907,
+    "name": "Olmezest 10 Tablet",
+    "price": 87.5,
+    "category": "Tablet",
+    "stock": 246,
+    "threshold": 8,
+    "expiry": "2027-10-16",
+    "sell": 96.25
+  },
+  {
+    "id": 230068,
+    "name": "Torp-E 10mg/10mg Tablet",
+    "price": 89,
+    "category": "Tablet",
+    "stock": 188,
+    "threshold": 11,
+    "expiry": "2024-08-04",
+    "sell": 97.9
+  },
+  {
+    "id": 11513,
+    "name": "Adflam 100mg/500mg Tablet",
+    "price": 38,
+    "category": "Tablet",
+    "stock": 78,
+    "threshold": 19,
+    "expiry": "2024-09-12",
+    "sell": 41.8
+  },
+  {
+    "id": 73090,
+    "name": "Expavon 6% Infusion",
+    "price": 598,
+    "category": "Injection",
+    "stock": 373,
+    "threshold": 7,
+    "expiry": "2026-02-17",
+    "sell": 657.8
+  },
+  {
+    "id": 36135,
+    "name": "Citirut-M Tablet",
+    "price": 90,
+    "category": "Tablet",
+    "stock": 303,
+    "threshold": 18,
+    "expiry": "2024-04-20",
+    "sell": 99
+  },
+  {
+    "id": 42620,
+    "name": "Cefaday 250mg Injection",
+    "price": 38.82,
+    "category": "Injection",
+    "stock": 112,
+    "threshold": 17,
+    "expiry": "2025-07-31",
+    "sell": 42.7
+  },
+  {
+    "id": 26526,
+    "name": "Broncho Tussin LS Drop",
+    "price": 40,
+    "category": "Syrup",
+    "stock": 441,
+    "threshold": 20,
+    "expiry": "2025-06-17",
+    "sell": 44
+  },
+  {
+    "id": 60499,
+    "name": "Duphill 100mg Syrup",
+    "price": 75,
+    "category": "Syrup",
+    "stock": 177,
+    "threshold": 13,
+    "expiry": "2026-10-08",
+    "sell": 82.5
+  },
+  {
+    "id": 97599,
+    "name": "Get IT Plus  Tablet",
+    "price": 109.9,
+    "category": "Tablet",
+    "stock": 319,
+    "threshold": 20,
+    "expiry": "2025-06-17",
+    "sell": 120.89
+  },
+  {
+    "id": 121592,
+    "name": "Lamifin Tablet",
+    "price": 110,
+    "category": "Tablet",
+    "stock": 244,
+    "threshold": 12,
+    "expiry": "2027-06-19",
+    "sell": 121
+  },
+  {
+    "id": 15545,
+    "name": "AD Para 100mg/325mg Tablet",
+    "price": 45,
+    "category": "Tablet",
+    "stock": 388,
+    "threshold": 19,
+    "expiry": "2024-01-16",
+    "sell": 49.5
+  },
+  {
+    "id": 94213,
+    "name": "Gutron 2.5mg Tablet",
+    "price": 1455,
+    "category": "Tablet",
+    "stock": 401,
+    "threshold": 10,
+    "expiry": "2026-05-04",
+    "sell": 1600.5
+  },
+  {
+    "id": 185748,
+    "name": "Roxylab 150mg Tablet",
+    "price": 60,
+    "category": "Tablet",
+    "stock": 53,
+    "threshold": 18,
+    "expiry": "2025-01-16",
+    "sell": 66
+  },
+  {
+    "id": 15308,
+    "name": "Atubri 500mg Tablet",
+    "price": 1730.77,
+    "category": "Tablet",
+    "stock": 492,
+    "threshold": 9,
+    "expiry": "2024-01-06",
+    "sell": 1903.85
+  },
+  {
+    "id": 216649,
+    "name": "T-Stat 100mg Injection",
+    "price": 71.14,
+    "category": "Injection",
+    "stock": 48,
+    "threshold": 16,
+    "expiry": "2027-02-18",
+    "sell": 78.25
+  },
+  {
+    "id": 126053,
+    "name": "Levenac P 100mg/325mg Tablet",
+    "price": 29,
+    "category": "Tablet",
+    "stock": 92,
+    "threshold": 20,
+    "expiry": "2027-08-09",
+    "sell": 31.9
+  },
+  {
+    "id": 33637,
+    "name": "Biomoxi 0.5% Eye Drop",
+    "price": 90,
+    "category": "Syrup",
+    "stock": 57,
+    "threshold": 17,
+    "expiry": "2027-04-29",
+    "sell": 99
+  },
+  {
+    "id": 154538,
+    "name": "Nervduce NT 400mg/10mg Tablet",
+    "price": 198,
+    "category": "Tablet",
+    "stock": 126,
+    "threshold": 20,
+    "expiry": "2027-02-18",
+    "sell": 217.8
+  },
+  {
+    "id": 76403,
+    "name": "Exermet GZ 60mg/500mg Tablet",
+    "price": 63.13,
+    "category": "Tablet",
+    "stock": 388,
+    "threshold": 8,
+    "expiry": "2025-02-15",
+    "sell": 69.44
+  },
+  {
+    "id": 133089,
+    "name": "Lebbeck Plus 10mg/5mg/200mg Tablet SR",
+    "price": 181,
+    "category": "Tablet",
+    "stock": 144,
+    "threshold": 10,
+    "expiry": "2026-11-24",
+    "sell": 199.1
+  },
+  {
+    "id": 11034,
+    "name": "Arthrox 500mg Tablet",
+    "price": 73,
+    "category": "Tablet",
+    "stock": 398,
+    "threshold": 10,
+    "expiry": "2025-02-21",
+    "sell": 80.3
+  },
+  {
+    "id": 62204,
+    "name": "Dicka MR Capsule",
+    "price": 190,
+    "category": "Other",
+    "stock": 274,
+    "threshold": 16,
+    "expiry": "2024-10-28",
+    "sell": 209
+  },
+  {
+    "id": 252557,
+    "name": "Zifrocin Oral Suspension",
+    "price": 90,
+    "category": "Syrup",
+    "stock": 56,
+    "threshold": 19,
+    "expiry": "2025-07-17",
+    "sell": 99
+  },
+  {
+    "id": 10924,
+    "name": "Akucof M Syrup",
+    "price": 67.5,
+    "category": "Syrup",
+    "stock": 327,
+    "threshold": 20,
+    "expiry": "2027-07-03",
+    "sell": 74.25
+  },
+  {
+    "id": 227040,
+    "name": "Tynex 250mg Tablet",
+    "price": 180,
+    "category": "Tablet",
+    "stock": 270,
+    "threshold": 16,
+    "expiry": "2024-06-15",
+    "sell": 198
+  },
+  {
+    "id": 120270,
+    "name": "Krondec 50mg Injection",
+    "price": 145,
+    "category": "Injection",
+    "stock": 113,
+    "threshold": 13,
+    "expiry": "2027-10-09",
+    "sell": 159.5
+  },
+  {
+    "id": 103644,
+    "name": "Genlapril 2.5mg Tablet",
+    "price": 18,
+    "category": "Tablet",
+    "stock": 81,
+    "threshold": 8,
+    "expiry": "2026-01-21",
+    "sell": 19.8
+  },
+  {
+    "id": 195549,
+    "name": "Raplor P Tablet",
+    "price": 45,
+    "category": "Tablet",
+    "stock": 105,
+    "threshold": 10,
+    "expiry": "2027-02-15",
+    "sell": 49.5
+  },
+  {
+    "id": 157353,
+    "name": "Nexval 500mg Tablet CR",
+    "price": 124,
+    "category": "Tablet",
+    "stock": 120,
+    "threshold": 14,
+    "expiry": "2027-03-10",
+    "sell": 136.4
+  },
+  {
+    "id": 47796,
+    "name": "Canvas A 5mg/50mg Tablet",
+    "price": 39,
+    "category": "Tablet",
+    "stock": 174,
+    "threshold": 11,
+    "expiry": "2026-04-06",
+    "sell": 42.9
+  },
+  {
+    "id": 91521,
+    "name": "Flucnex 150 Tablet",
+    "price": 32,
+    "category": "Tablet",
+    "stock": 304,
+    "threshold": 10,
+    "expiry": "2026-02-10",
+    "sell": 35.2
+  },
+  {
+    "id": 58130,
+    "name": "Clavnox 1000mg/200mg Injection",
+    "price": 144,
+    "category": "Injection",
+    "stock": 380,
+    "threshold": 8,
+    "expiry": "2027-05-17",
+    "sell": 158.4
+  },
+  {
+    "id": 43019,
+    "name": "Clearflam 50mg Tablet",
+    "price": 21.39,
+    "category": "Tablet",
+    "stock": 396,
+    "threshold": 15,
+    "expiry": "2024-07-07",
+    "sell": 23.53
+  },
+  {
+    "id": 201625,
+    "name": "Sylcoff-D Syrup Sugar Free",
+    "price": 120,
+    "category": "Syrup",
+    "stock": 334,
+    "threshold": 19,
+    "expiry": "2026-05-31",
+    "sell": 132
+  },
+  {
+    "id": 6470,
+    "name": "ALZOLAM 1.5 MG TABLET SR",
+    "price": 51,
+    "category": "Tablet",
+    "stock": 462,
+    "threshold": 14,
+    "expiry": "2025-10-22",
+    "sell": 56.1
+  },
+  {
+    "id": 195988,
+    "name": "Relicin 500mg Injection",
+    "price": 65,
+    "category": "Injection",
+    "stock": 331,
+    "threshold": 16,
+    "expiry": "2025-11-08",
+    "sell": 71.5
+  },
+  {
+    "id": 172789,
+    "name": "Olancia Rapitab 10mg Tablet",
+    "price": 49,
+    "category": "Tablet",
+    "stock": 426,
+    "threshold": 11,
+    "expiry": "2026-10-07",
+    "sell": 53.9
+  },
+  {
+    "id": 71401,
+    "name": "Deltaflox OR Oral Suspension",
+    "price": 39,
+    "category": "Syrup",
+    "stock": 52,
+    "threshold": 13,
+    "expiry": "2026-10-20",
+    "sell": 42.9
+  },
+  {
+    "id": 203903,
+    "name": "Sigdoth 75mg Tablet",
+    "price": 79.8,
+    "category": "Tablet",
+    "stock": 115,
+    "threshold": 14,
+    "expiry": "2027-10-03",
+    "sell": 87.78
+  },
+  {
+    "id": 107327,
+    "name": "Hiodic Tablet SR",
+    "price": 30,
+    "category": "Tablet",
+    "stock": 254,
+    "threshold": 20,
+    "expiry": "2024-07-08",
+    "sell": 33
+  },
+  {
+    "id": 138357,
+    "name": "Methyl-Pred 1000mg Injection",
+    "price": 1080,
+    "category": "Injection",
+    "stock": 172,
+    "threshold": 17,
+    "expiry": "2027-12-12",
+    "sell": 1188
+  },
+  {
+    "id": 194184,
+    "name": "Reenocef 500mg Injection",
+    "price": 37,
+    "category": "Injection",
+    "stock": 23,
+    "threshold": 9,
+    "expiry": "2024-07-12",
+    "sell": 40.7
+  },
+  {
+    "id": 99277,
+    "name": "Gettimox Eye Drop",
+    "price": 93,
+    "category": "Syrup",
+    "stock": 136,
+    "threshold": 11,
+    "expiry": "2027-03-29",
+    "sell": 102.3
+  },
+  {
+    "id": 161265,
+    "name": "Nitocef 500mg Injection",
+    "price": 55.45,
+    "category": "Injection",
+    "stock": 484,
+    "threshold": 16,
+    "expiry": "2024-09-19",
+    "sell": 61
+  },
+  {
+    "id": 207082,
+    "name": "Stoflox MZS Syrup",
+    "price": 64,
+    "category": "Syrup",
+    "stock": 243,
+    "threshold": 9,
+    "expiry": "2025-08-13",
+    "sell": 70.4
+  },
+  {
+    "id": 209531,
+    "name": "Swimpan 40mg Tablet",
+    "price": 60,
+    "category": "Tablet",
+    "stock": 404,
+    "threshold": 7,
+    "expiry": "2024-05-30",
+    "sell": 66
+  },
+  {
+    "id": 190553,
+    "name": "R PRIL 5 MG TABLET",
+    "price": 28.75,
+    "category": "Tablet",
+    "stock": 201,
+    "threshold": 12,
+    "expiry": "2026-10-29",
+    "sell": 31.63
+  },
+  {
+    "id": 90164,
+    "name": "Fern 50 mg/125 mg Capsule",
+    "price": 41.34,
+    "category": "Other",
+    "stock": 131,
+    "threshold": 6,
+    "expiry": "2027-01-14",
+    "sell": 45.47
+  },
+  {
+    "id": 140412,
+    "name": "Muscoact 8mg Capsule",
+    "price": 290,
+    "category": "Other",
+    "stock": 175,
+    "threshold": 14,
+    "expiry": "2025-01-04",
+    "sell": 319
+  },
+  {
+    "id": 4885,
+    "name": "Ampoxin Plus 250 mg/250 mg Capsule",
+    "price": 80,
+    "category": "Other",
+    "stock": 182,
+    "threshold": 7,
+    "expiry": "2024-12-26",
+    "sell": 88
+  },
+  {
+    "id": 240829,
+    "name": "Vogisir M 500mg/0.3mg Tablet SR",
+    "price": 85.45,
+    "category": "Tablet",
+    "stock": 371,
+    "threshold": 19,
+    "expiry": "2027-01-31",
+    "sell": 94
+  },
+  {
+    "id": 147796,
+    "name": "Mepfor 2mg/500mg Tablet SR",
+    "price": 58,
+    "category": "Tablet",
+    "stock": 50,
+    "threshold": 9,
+    "expiry": "2025-01-04",
+    "sell": 63.8
+  }
+]
