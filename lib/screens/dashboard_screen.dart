@@ -1,3 +1,4 @@
+import 'dart:math'; // For generating random sold quantities
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -26,6 +27,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
   int nearExpiryCount = 0;
   int lowStockCount = 0;
   int restockCount = 0;
+  List<BarChartGroupData> profitGraphData = [];
+  List<String> medicineNames = [];
+  int currentPage = 0;
+  int itemsPerPage = 10;
+
+  @override
+  void initState() {
+    super.initState();
+    fetchStockAlertCounts();
+    fetchProfitGraphData();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,8 +60,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             _buildWelcomeCard(),
             SizedBox(height: 20),
             _buildAnalyticsSection(),
-            SizedBox(height: 20),
-            _buildRevenueProfitGraph(),
+            _buildProfitGraph(),
             SizedBox(height: 20),
             _buildStockAlertsSection(context),
             SizedBox(height: 20),
@@ -326,75 +337,6 @@ Widget _buildStockAlertsSection(BuildContext context) {
 }
 
 
-  // Revenue & Profit Graph
-  Widget _buildRevenueProfitGraph() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text("Revenue & Profit Trends",
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-        SizedBox(height: 10),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            DropdownButton<String>(
-              value: selectedGraph,
-              items: ["Revenue", "Profit"]
-                  .map((e) => DropdownMenuItem(value: e, child: Text(e)))
-                  .toList(),
-              onChanged: (value) {
-                setState(() {
-                  selectedGraph = value!;
-                });
-              },
-            ),
-            DropdownButton<String>(
-              value: selectedTimeFrame,
-              items: ["Daily", "Weekly", "Monthly"]
-                  .map((e) => DropdownMenuItem(value: e, child: Text(e)))
-                  .toList(),
-              onChanged: (value) {
-                setState(() {
-                  selectedTimeFrame = value!;
-                });
-              },
-            ),
-          ],
-        ),
-        SizedBox(height: 10),
-        SizedBox(
-          height: 300,
-          child: LineChart(
-            LineChartData(
-              titlesData: FlTitlesData(
-                leftTitles: AxisTitles(
-                    sideTitles: SideTitles(showTitles: true, reservedSize: 40)),
-                bottomTitles:
-                    AxisTitles(sideTitles: SideTitles(showTitles: true)),
-              ),
-              gridData: FlGridData(show: true),
-              borderData: FlBorderData(show: true),
-              lineBarsData: [
-                LineChartBarData(
-                  spots: [
-                    FlSpot(1, 10),
-                    FlSpot(2, 20),
-                    FlSpot(3, 35),
-                    FlSpot(4, 50),
-                    FlSpot(5, 70)
-                  ],
-                  isCurved: true,
-                  gradient: LinearGradient(colors: [Colors.green, Colors.blue]),
-                  barWidth: 4,
-                  isStrokeCapRound: true,
-                ),
-              ],
-            ),
-          ),
-        ),
-      ],
-    );
-  }
 
   // Info Card (Fixed Missing Method)
   Widget _buildInfoCard(
@@ -496,5 +438,146 @@ Widget _buildStockAlertsSection(BuildContext context) {
       lowStockCount = lowStock;
       restockCount = restock;
     });
+  }
+  // Fetch profit graph data - moved inside _DashboardScreenState
+  Future<void> fetchProfitGraphData() async {
+    final snapshot = await FirebaseFirestore.instance.collection('medicines').get();
+
+    List<BarChartGroupData> tempData = [];
+    List<String> tempNames = [];
+    int index = 0;
+    Random random = Random();
+
+    for (var doc in snapshot.docs) {
+      final data = doc.data();
+      final price = (data['price'] ?? 0).toDouble();
+      final sell = (data['sell'] ?? 0).toDouble();
+      final medName = data['name'] ?? '';
+
+      if (price == 0 || sell == 0) continue;
+
+      final quantitySold = random.nextInt(100) + 1;
+      final profit = (sell - price) * quantitySold;
+
+      tempData.add(
+        BarChartGroupData(
+          x: index,
+          barRods: [
+            BarChartRodData(
+              toY: profit,
+              color: Colors.green,
+              width: 16,
+              borderRadius: BorderRadius.circular(4),
+            )
+          ],
+        ),
+      );
+      tempNames.add(medName);
+      index++;
+    }
+
+    // Sort by profit descending
+    tempData.sort((a, b) => b.barRods.first.toY.compareTo(a.barRods.first.toY));
+    // Names stay in sync separately if needed (for now, keep original order for names)
+
+    setState(() {
+      profitGraphData = tempData;
+      medicineNames = tempNames;
+    });
+  }
+
+  // Build profit graph widget - moved inside _DashboardScreenState
+  Widget _buildProfitGraph() {
+    // Pagination logic
+    final start = currentPage * itemsPerPage;
+    final end = (start + itemsPerPage) > profitGraphData.length
+        ? profitGraphData.length
+        : (start + itemsPerPage);
+    final visibleProfitGraphData = profitGraphData.sublist(start, end);
+    final visibleMedicineNames = (medicineNames.length == profitGraphData.length)
+        ? medicineNames.sublist(start, end)
+        : List<String>.generate(visibleProfitGraphData.length, (i) => 'Med ${start + i + 1}');
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text("Profit Earned Per Medicine",
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+        SizedBox(height: 10),
+        SizedBox(
+          height: 300,
+          child: BarChart(
+            BarChartData(
+              titlesData: FlTitlesData(
+                bottomTitles: AxisTitles(
+                  sideTitles: SideTitles(
+                    showTitles: true,
+                    getTitlesWidget: (double value, TitleMeta meta) {
+                      int idx = value.toInt();
+                      if (idx < 0 || idx >= visibleMedicineNames.length) {
+                        return Container();
+                      }
+                      return SideTitleWidget(
+                        meta: meta,
+                        child: Text(
+                          visibleMedicineNames[idx],
+                          style: TextStyle(fontSize: 10),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      );
+                    },
+                    interval: 1,
+                  ),
+                ),
+                leftTitles: AxisTitles(
+                  sideTitles: SideTitles(showTitles: true),
+                ),
+              ),
+              gridData: FlGridData(show: true),
+              borderData: FlBorderData(show: false),
+              barGroups: visibleProfitGraphData.asMap().entries.map((entry) {
+                int idx = entry.key;
+                var group = entry.value;
+                return BarChartGroupData(
+                  x: idx,
+                  barRods: group.barRods.map((rod) {
+                    return rod.copyWith(
+                      toY: double.parse(rod.toY.toStringAsFixed(0)),
+                    );
+                  }).toList(),
+                );
+              }).toList(),
+            ),
+          ),
+        ),
+        SizedBox(height: 8),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: currentPage > 0
+                  ? () {
+                      setState(() {
+                        currentPage--;
+                      });
+                    }
+                  : null,
+            ),
+            Text("Page ${currentPage + 1}"),
+            IconButton(
+              icon: Icon(Icons.arrow_forward),
+              onPressed: (currentPage + 1) * itemsPerPage < profitGraphData.length
+                  ? () {
+                      setState(() {
+                        currentPage++;
+                      });
+                    }
+                  : null,
+            ),
+          ],
+        ),
+      ],
+    );
   }
 }
