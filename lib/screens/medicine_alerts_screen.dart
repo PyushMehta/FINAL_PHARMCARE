@@ -39,15 +39,16 @@ class _MedicineAlertsScreenState extends State<MedicineAlertsScreen> with Single
     for (var doc in snapshot.docs) {
       final data = doc.data();
       final name = data['name'] ?? 'Unknown';
-      final expiryStr = data['expiry'] ?? '01/2099';
+      final expiryStr = data['expiry'] ?? '2099-01-01'; // Default fallback
       final stock = data['stock'] ?? 0;
       final threshold = data['threshold'] ?? 0;
 
-      final parts = expiryStr.split('/');
-      if (parts.length == 2) {
-        final expMonth = int.tryParse(parts[0]) ?? 1;
-        final expYear = int.tryParse(parts[1]) ?? 2099;
-        final expiryDate = DateTime(expYear, expMonth + 1, 0);
+      final parts = expiryStr.split('-');
+      if (parts.length == 3) {
+        final expYear = int.tryParse(parts[0]) ?? 2099;
+        final expMonth = int.tryParse(parts[1]) ?? 1;
+        final expDay = int.tryParse(parts[2]) ?? 1;
+        final expiryDate = DateTime(expYear, expMonth, expDay);
 
         if (expiryDate.isBefore(now)) {
           expired.add({"name": name, "expiry": expiryStr});
